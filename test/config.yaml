@@ -1,0 +1,13 @@
+trimmomatic:
+  adapters: adapters.fa
+  leading_quality: 3
+  trailing_quality: 3
+  window_size: 4
+  quality_threshold: 15
+  min_len: 36
+
+spades:
+  threads: 2
+  memory: 2
+  careful: "--careful"
+  cov_cutoff: "--cov-cutoff auto"

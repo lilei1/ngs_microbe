@@ -1,0 +1,13 @@
+trimmomatic:
+  adapters: "TruSeq3-PE.fa"
+  leading_quality: 3
+  trailing_quality: 3
+  window_size: 4
+  quality_threshold: 15
+  min_len: 36
+
+spades:
+  threads: 2
+  memory: 4
+  # careful: true  # Removed as it's incompatible with isolate mode
+  cov_cutoff: true
